@@ -65,12 +65,13 @@
   }  
   .profile{
       border-radius: 4px;
+      margin-top: 100px;
   }
   .name{
       font-size: 21px;
   } 
   .menu img{
-      width: 120px;
+      width: 110px;
   }
 }
 @media all and (max-width:350px){
@@ -90,7 +91,7 @@
   .profile{
       border-radius: 4px;
       width: 65%;
-      margin-top: 100px;
+      margin-top: 80px;
   }
   .name{
       font-size: 20px;

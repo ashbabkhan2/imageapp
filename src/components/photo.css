@@ -1,0 +1,18 @@
+.photo img{
+    border-radius: 10px;
+    width: 95%;
+    height: 180px;
+}
+.photo{
+    margin-bottom: 10px;
+}
+.photo img:hover{
+    border:2px solid white;
+    box-shadow: 0px 0px 5px black;
+    transform: scale(1.1)
+}
+@media all and (max-width:300px){
+    .photo img:hover{
+           transform: scale(0.9);
+    }
+}

@@ -1,0 +1,35 @@
+.brand{
+    color: #fff;
+}
+
+.navbar{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        
+    
+}
+ul{
+    list-style-type: none;
+}
+
+ul li a:hover{
+    color: black;
+    background-color: #fff;
+}
+@media all and (max-width:300px){
+    ul li a{
+        padding: 10px 17px;
+    }
+}

@@ -1,38 +1,88 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+.icon{
+  font-size: 50px;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+.App{
+  background-color: black;
+  overflow: auto;
+  height: 100vh; 
+}
+.inputs{
+  text-align: center;
+  margin-top: 20px;
+}
+.inputs input{
+  padding: 10px 30px;
+  border-style: none;
+  border-bottom-style: groove;
+  outline: none;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  border-left-style: hidden;
+  font-size: 22px;
+  text-align: center;
+}
+.fa-solid{
+  font-size: 30px;
+  color: green;
+}
+.grids{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px 3%;
+  gap: 10px;
+  margin-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media all and (max-width:650px){
+  .grids{
+    grid-template-columns: 1fr 1fr 1fr;
   }
+ 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.load{
+  text-align: center;
+  margin:20px 0px;
+}
+.load a{
+  text-decoration: none;
   color: white;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  transition: background-color 1s;
+  transition: color 1s;
+}
+.load a:hover{
+  color: black;
+  font-weight: bold;
+  background-color: #fff
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media all and (max-width:450px){
+    .grids{
+      grid-template-columns:1fr 1fr;
+    }
+     .inputs input{
+    padding: 10px 15px;
+  } 
+}
+@media all and (max-width:330px){
+     .grids{
+       grid-template-columns: 1fr;
+     }
+      .inputs input{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 80%;
+  } 
 }
